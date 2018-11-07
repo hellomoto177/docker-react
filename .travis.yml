@@ -6,7 +6,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t travis/docker-react -f Dockerfile.dev .
+  - docker build -t hellomoto177/docker-react -f Dockerfile.dev .
 
 scripts:
-  - docker run travis/docker-react:latest npm run test -- --coverage
+  - docker run hellomoto177/docker-react:latest npm run test -- --coverage
